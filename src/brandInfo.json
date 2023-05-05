@@ -1,0 +1,9 @@
+{
+    "charts": {
+        "colors": {
+            "primary": "#374151",
+            "secondary": "#2563eb",
+            "tertiary": "#FFA500"
+        }
+    }
+}
