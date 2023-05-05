@@ -1,0 +1,11 @@
+{
+    "menuItems": [
+        {
+            "active": true,
+            "name": "home",
+            "label": "Home",
+            "icon": "",
+            "rPath": "/"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+.layout {
+    align-items: center;
+    background-color: theme('colors.background');
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    &__nav {
+        background-color: theme('colors.navBackground');
+        box-shadow: theme('boxShadow.sm');
+        height: theme('layout.sizes.navHeight');
+        width: 100%;
+        z-index: theme('components.zIndex.nav');
+    }
+
+    &__main {
+        background-color: theme('colors.mainBackground');
+        flex-grow: 1;
+        max-width: theme('layout.viewport.mainWidth');
+        padding: theme('layout.viewport.gutterHeight') theme('layout.viewport.gutterWidth');
+        width: 100%;
+    }
+}

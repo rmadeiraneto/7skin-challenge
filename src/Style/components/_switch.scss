@@ -1,0 +1,37 @@
+.switch {
+    --circle-width: 0.75em;
+    --white-space: calc((1em - var(--circle-width)) / 2);
+    --width-ratio: 1.75;
+
+    appearance: none;
+    font-size: theme('components.sizes.switch');
+    box-sizing: border-box;
+    height: 1em;
+    width: calc(var(--width-ratio) * 1em);
+    background: theme('colors.gray.300');
+    border-radius: 0.4em;
+    cursor: pointer;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: var(--circle-width);
+      aspect-ratio: 1/1;
+      left: var(--white-space);
+      top: 50%;
+      translate: 0 -50%;
+      border-radius: 50%;
+      background: theme('colors.white');
+      transition: 300ms ease;
+    }
+  
+    &:checked {
+      background: theme('colors.primary');
+  
+      &::after {
+        left: calc(100% - var(--white-space) - var(--circle-width));
+      }
+    }
+  }
+  

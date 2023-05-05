@@ -1,0 +1,12 @@
+.nav-menu {
+    align-items: center;
+    display: flex;
+    font-weight: theme('fontWeight.bold');
+    height: 100%;
+    justify-content: center;
+    gap: 12px;
+
+    &__item {
+        align-self: center;
+    } 
+}

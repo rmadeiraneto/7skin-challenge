@@ -1,0 +1,10 @@
+input, textarea {
+    background-color: theme('colors.white');
+    border: theme('borderWidth.DEFAULT') solid theme('colors.gray.300');
+    border-radius: theme('borderRadius.DEFAULT');
+    padding: .15rem .5rem;
+
+    &:focus {
+        border: theme('borderWidth.2') solid theme('borderColor.accent');
+    }
+}

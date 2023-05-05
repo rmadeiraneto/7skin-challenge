@@ -1,0 +1,11 @@
+.nav-menu-item {
+    padding: 4px 8px;
+
+    &--active {
+        border-top: 2px solid theme('colors.accent');
+    }
+
+    &:hover:where(:not(&--active)) {
+        background-color: theme('colors.accentLight');
+    }
+}
