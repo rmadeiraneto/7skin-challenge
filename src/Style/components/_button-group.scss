@@ -1,0 +1,33 @@
+.btn-group {
+    align-items: center;
+    border:  theme('borderWidth.2') solid theme('colors.primary');
+    border-radius: 6px;
+    display: inline-flex;
+    overflow: hidden;
+
+    &__item {
+        cursor: pointer;
+
+        &:where(:not(:last-child)) {
+            border-right: 2px solid theme('colors.primary');
+        }
+    }
+
+    &-item {
+        background-color: theme('colors.white');
+        color: theme('colors.primary');
+        padding: 6px 12px;
+
+        &--active {
+            background-color: theme('colors.primary');
+            color: theme('colors.white');
+            font-weight: theme('fontWeight.bold');
+        }
+
+        &:hover:where(:not(&--active)) {
+            background-color: theme('colors.primaryLight');
+        }
+    }
+}
+
+
